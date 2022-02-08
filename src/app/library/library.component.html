@@ -1,0 +1,51 @@
+<!-- <p>{{bookData.url}}</p> -->
+<div class="entire">
+    <h4 class="display-4 text-center text-light">{{bookData.title}}</h4>
+   <div class="row pageText">
+    <div class="col-5 p-4">
+        <div>
+            <h4>Authors:</h4>
+            <li *ngFor="let author of bookData.authors">{{author.name}}</li> 
+        </div>
+        <br>
+        <div>
+            <h4>Pages:</h4>
+            <p>{{bookData.number_of_pages}} pages</p>
+        </div>
+        <br>
+        <div>
+            <h4>Publishers:</h4>
+            <li *ngFor="let publisher of bookData.publishers">{{publisher.name}}</li> 
+        </div>
+        <br>
+        <div>
+            <h5>Based On:</h5>
+            <li *ngFor="let subject of bookData.subjects">{{subject.name}}</li>
+        </div>
+      <br>
+      <div>
+        <h5>Publish Places:</h5>
+        <li *ngFor="let place of bookData.publish_places">{{place.name}}</li>
+      </div>
+      <br>
+      <div>
+        <h5>Published On:</h5>
+        <p>{{bookData.publish_date}}</p>
+      </div>
+    </div>
+    <div class="col-7 p-4">
+        <img [src]="bookData.cover.medium">
+        <div class="p-2">
+            <h5>Contents:</h5>
+            <li *ngFor="let content of bookData.table_of_contents">{{content.title}}</li>
+        </div>
+    </div>
+   </div>
+   <div class=" anchor p-4">
+    <a (click)="openUrl()">Know More</a>
+   </div>
+   <div class="p-4">
+       <h5>Note:</h5>
+       <p>{{bookData.notes}}</p>
+   </div>
+</div>

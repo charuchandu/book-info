@@ -1,0 +1,24 @@
+.entire{
+    background-image: url("https://t3.ftcdn.net/jpg/02/65/32/32/360_F_265323269_QoipYNMdd97ZbQJGlSN5TLBXxRUoe0ju.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-left: 10%;
+    margin-right: 10%;
+    color:white
+}
+
+.anchor:hover {
+    cursor: pointer;
+    color: rgb(255, 250, 250)
+}
+
+.anchor{
+    color: rgb(248, 248, 185);
+    float: right;
+    padding: 0px 30px;
+}
+
+.pageText{
+    padding-left: 5%;
+    padding-right: 5%;
+}
